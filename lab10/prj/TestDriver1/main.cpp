@@ -5,6 +5,8 @@
 
 using namespace std;
 
+
+// Функція для заміни підрядка у рядку
 string replace_substr(const string& str, const string& old_value, const string& new_value) {
     string result = str;
     auto pos = result.find(old_value);
@@ -27,6 +29,7 @@ string modify_sentence(const string& sentence) {
     return result;
 }
 
+// Функція для підрахунку кількості символів у рядку з урахуванням UTF-8
 size_t utf8_strlen(const string& str)
 {
     size_t c,i,ix,q;
@@ -42,6 +45,7 @@ size_t utf8_strlen(const string& str)
     return q;
 }
 
+// Функція для підрахунку кількості пунктуаційних знаків у рядку
 size_t count_punctuations(const string& str) {
     return std::ranges::count(str, '.')
     + std::ranges::count(str, ',')
