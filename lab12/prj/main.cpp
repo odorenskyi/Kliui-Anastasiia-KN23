@@ -12,7 +12,8 @@
 #define BEEP_COUNT 100
 #define BEEP_REPEAT_DELAY 500
 const std::vector<std::filesystem::path> expectedSourceFilePath {"lab12", "prj", "main.cpp"};
-#define RESULT_FILE_NAME "TestResults.txt"
+const auto sourceFilePath = std::filesystem::path(__FILE__);
+const auto testResultsFilePath = sourceFilePath.parent_path().parent_path() / "TestSuite" / "TestResult.txt";
 #define ERROR_MESSAGE "Встановлені вимоги порядку виконання лабораторної роботи порушено!"
 
 void playBeepSounds(unsigned int count,
@@ -34,9 +35,9 @@ bool checkRequirements() {
 }
 
 auto openResultFile() {
-    auto stream = std::ofstream(RESULT_FILE_NAME);
+    auto stream = std::ofstream(testResultsFilePath);
     if(!stream.is_open()) {
-        std::cerr << "cannot open " << RESULT_FILE_NAME << std::endl;
+        std::cerr << "cannot open " << testResultsFilePath.filename() << std::endl;
         exit(-1);
     }
     return stream;
