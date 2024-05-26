@@ -9,10 +9,20 @@
 /* Begin PBXBuildFile section */
 		4D97ADB52C038EDA002409C3 /* ClassLab12_Klui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADA62C0377DC002409C3 /* ClassLab12_Klui.cpp */; };
 		4D97ADBE2C038F57002409C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADBD2C038F57002409C3 /* main.cpp */; };
+		4D97ADC92C03907A002409C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADC82C03907A002409C3 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4D97ADB92C038F57002409C3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4D97ADC42C03907A002409C3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -30,6 +40,8 @@
 		4D97ADB42C038EBF002409C3 /* ModulesKlui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModulesKlui.h; sourceTree = "<group>"; };
 		4D97ADBB2C038F57002409C3 /* TestDriver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestDriver; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D97ADBD2C038F57002409C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4D97ADC62C03907A002409C3 /* Teacher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Teacher; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D97ADC82C03907A002409C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D97ADC32C03907A002409C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +74,7 @@
 			children = (
 				4D97ADB32C038E9A002409C3 /* ModulesKlui */,
 				4D97ADBC2C038F57002409C3 /* TestDriver */,
+				4D97ADC72C03907A002409C3 /* Teacher */,
 				4D97AD9D2C037789002409C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +84,7 @@
 			children = (
 				4D97ADAF2C038E92002409C3 /* libModulesKlui.a */,
 				4D97ADBB2C038F57002409C3 /* TestDriver */,
+				4D97ADC62C03907A002409C3 /* Teacher */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +105,14 @@
 				4D97ADBD2C038F57002409C3 /* main.cpp */,
 			);
 			path = TestDriver;
+			sourceTree = "<group>";
+		};
+		4D97ADC72C03907A002409C3 /* Teacher */ = {
+			isa = PBXGroup;
+			children = (
+				4D97ADC82C03907A002409C3 /* main.cpp */,
+			);
+			path = Teacher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +162,23 @@
 			productReference = 4D97ADBB2C038F57002409C3 /* TestDriver */;
 			productType = "com.apple.product-type.tool";
 		};
+		4D97ADC52C03907A002409C3 /* Teacher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D97ADCA2C03907A002409C3 /* Build configuration list for PBXNativeTarget "Teacher" */;
+			buildPhases = (
+				4D97ADC22C03907A002409C3 /* Sources */,
+				4D97ADC32C03907A002409C3 /* Frameworks */,
+				4D97ADC42C03907A002409C3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teacher;
+			productName = Teacher;
+			productReference = 4D97ADC62C03907A002409C3 /* Teacher */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +192,9 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					4D97ADBA2C038F57002409C3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4D97ADC52C03907A002409C3 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -165,6 +214,7 @@
 			targets = (
 				4D97ADAE2C038E92002409C3 /* ModulesKlui */,
 				4D97ADBA2C038F57002409C3 /* TestDriver */,
+				4D97ADC52C03907A002409C3 /* Teacher */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +233,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D97ADBE2C038F57002409C3 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D97ADC22C03907A002409C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D97ADC92C03907A002409C3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +398,22 @@
 			};
 			name = Release;
 		};
+		4D97ADCB2C03907A002409C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D97ADCC2C03907A002409C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +440,15 @@
 			buildConfigurations = (
 				4D97ADC02C038F57002409C3 /* Debug */,
 				4D97ADC12C038F57002409C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D97ADCA2C03907A002409C3 /* Build configuration list for PBXNativeTarget "Teacher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D97ADCB2C03907A002409C3 /* Debug */,
+				4D97ADCC2C03907A002409C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
