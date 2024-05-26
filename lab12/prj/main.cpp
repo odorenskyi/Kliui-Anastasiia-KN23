@@ -74,9 +74,16 @@ void doUnitTestCase(std::ostream &stream,
 void doUnitTesting() {
     auto stream = openResultFile();
     
-    doUnitTestCase(stream, 1, 10.0f, 11.5f, 100.0f);
-    doUnitTestCase(stream, 2, 10.0f, 11.5f, 100.0f);
-    doUnitTestCase(stream, 3, 10.0f, 11.5f, 100.0f);
+    doUnitTestCase(stream, 1, 3.0f, 10.0f,  282.743347f);
+    doUnitTestCase(stream, 2, 5.0f, 7.0f, 549.778687f);
+    doUnitTestCase(stream, 3, 2.0f, 4.0f, 50.2654839f);
+    doUnitTestCase(stream, 4, 4.0f, 8.0f, 402.123871f);
+    doUnitTestCase(stream, 5, 6.0f, 12.0f, 1357.16797f);
+    doUnitTestCase(stream, 6, 10.0f, 15.0f, 4712.38916f);
+    doUnitTestCase(stream, 7, 9.0f, 5.0f, 1272.34497f);
+    doUnitTestCase(stream, 8, 2.0f, 15.0f, 188.49556f);
+    doUnitTestCase(stream, 9, 1.0f, 10.0f, 31.415926f);
+    doUnitTestCase(stream, 10, 3.0f, 2.0f, 56.5486679f);
 
     stream.close();
 }
@@ -89,7 +96,7 @@ void handleFailedRequirements() {
 }
 
 int main() {
-    playBeepSounds(BEEP_COUNT);
+   // playBeepSounds(BEEP_COUNT);
     if(checkRequirements()) {
         doUnitTesting();
     } else {
