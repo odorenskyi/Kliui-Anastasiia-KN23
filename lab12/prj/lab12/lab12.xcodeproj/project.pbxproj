@@ -10,7 +10,18 @@
 		4D97ADB52C038EDA002409C3 /* ClassLab12_Klui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADA62C0377DC002409C3 /* ClassLab12_Klui.cpp */; };
 		4D97ADBE2C038F57002409C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADBD2C038F57002409C3 /* main.cpp */; };
 		4D97ADC92C03907A002409C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADC82C03907A002409C3 /* main.cpp */; };
+		4D97ADCE2C039538002409C3 /* libModulesKlui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D97ADAF2C038E92002409C3 /* libModulesKlui.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D97ADCF2C039538002409C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D97AD942C037789002409C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D97ADAE2C038E92002409C3;
+			remoteInfo = ModulesKlui;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4D97ADB92C038F57002409C3 /* CopyFiles */ = {
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D97ADCE2C039538002409C3 /* libModulesKlui.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +88,7 @@
 				4D97ADBC2C038F57002409C3 /* TestDriver */,
 				4D97ADC72C03907A002409C3 /* Teacher */,
 				4D97AD9D2C037789002409C3 /* Products */,
+				4D97ADCD2C039538002409C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +126,13 @@
 				4D97ADC82C03907A002409C3 /* main.cpp */,
 			);
 			path = Teacher;
+			sourceTree = "<group>";
+		};
+		4D97ADCD2C039538002409C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +176,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4D97ADD02C039538002409C3 /* PBXTargetDependency */,
 			);
 			name = TestDriver;
 			productName = TestDriver;
@@ -245,6 +266,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D97ADD02C039538002409C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D97ADAE2C038E92002409C3 /* ModulesKlui */;
+			targetProxy = 4D97ADCF2C039538002409C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4D97ADA12C037789002409C3 /* Debug */ = {
