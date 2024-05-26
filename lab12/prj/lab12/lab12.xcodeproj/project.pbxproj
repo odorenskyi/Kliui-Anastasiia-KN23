@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D97ADA02C037789002409C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97AD9F2C037789002409C3 /* main.cpp */; };
-		4D97ADA82C0377DC002409C3 /* ClassLab12_Klui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADA62C0377DC002409C3 /* ClassLab12_Klui.cpp */; };
+		4D97ADB52C038EDA002409C3 /* ClassLab12_Klui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADA62C0377DC002409C3 /* ClassLab12_Klui.cpp */; };
+		4D97ADBE2C038F57002409C3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D97ADBD2C038F57002409C3 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4D97AD9A2C037789002409C3 /* CopyFiles */ = {
+		4D97ADB92C038F57002409C3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +24,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4D97AD9C2C037789002409C3 /* lab12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lab12; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D97AD9F2C037789002409C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4D97ADA62C0377DC002409C3 /* ClassLab12_Klui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassLab12_Klui.cpp; sourceTree = "<group>"; };
 		4D97ADA72C0377DC002409C3 /* ClassLab12_Klui.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClassLab12_Klui.hpp; sourceTree = "<group>"; };
+		4D97ADAF2C038E92002409C3 /* libModulesKlui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModulesKlui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D97ADB42C038EBF002409C3 /* ModulesKlui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModulesKlui.h; sourceTree = "<group>"; };
+		4D97ADBB2C038F57002409C3 /* TestDriver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestDriver; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D97ADBD2C038F57002409C3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4D97AD992C037789002409C3 /* Frameworks */ = {
+		4D97ADAD2C038E92002409C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D97ADB82C038F57002409C3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,9 +53,8 @@
 		4D97AD932C037789002409C3 = {
 			isa = PBXGroup;
 			children = (
-				4D97ADA62C0377DC002409C3 /* ClassLab12_Klui.cpp */,
-				4D97ADA72C0377DC002409C3 /* ClassLab12_Klui.hpp */,
-				4D97AD9F2C037789002409C3 /* main.cpp */,
+				4D97ADB32C038E9A002409C3 /* ModulesKlui */,
+				4D97ADBC2C038F57002409C3 /* TestDriver */,
 				4D97AD9D2C037789002409C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,29 +62,75 @@
 		4D97AD9D2C037789002409C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4D97AD9C2C037789002409C3 /* lab12 */,
+				4D97ADAF2C038E92002409C3 /* libModulesKlui.a */,
+				4D97ADBB2C038F57002409C3 /* TestDriver */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4D97ADB32C038E9A002409C3 /* ModulesKlui */ = {
+			isa = PBXGroup;
+			children = (
+				4D97ADA62C0377DC002409C3 /* ClassLab12_Klui.cpp */,
+				4D97ADA72C0377DC002409C3 /* ClassLab12_Klui.hpp */,
+				4D97ADB42C038EBF002409C3 /* ModulesKlui.h */,
+			);
+			path = ModulesKlui;
+			sourceTree = "<group>";
+		};
+		4D97ADBC2C038F57002409C3 /* TestDriver */ = {
+			isa = PBXGroup;
+			children = (
+				4D97ADBD2C038F57002409C3 /* main.cpp */,
+			);
+			path = TestDriver;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4D97ADAB2C038E92002409C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		4D97AD9B2C037789002409C3 /* lab12 */ = {
+		4D97ADAE2C038E92002409C3 /* ModulesKlui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4D97ADA32C037789002409C3 /* Build configuration list for PBXNativeTarget "lab12" */;
+			buildConfigurationList = 4D97ADB02C038E92002409C3 /* Build configuration list for PBXNativeTarget "ModulesKlui" */;
 			buildPhases = (
-				4D97AD982C037789002409C3 /* Sources */,
-				4D97AD992C037789002409C3 /* Frameworks */,
-				4D97AD9A2C037789002409C3 /* CopyFiles */,
+				4D97ADAB2C038E92002409C3 /* Headers */,
+				4D97ADAC2C038E92002409C3 /* Sources */,
+				4D97ADAD2C038E92002409C3 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = lab12;
-			productName = lab12;
-			productReference = 4D97AD9C2C037789002409C3 /* lab12 */;
+			name = ModulesKlui;
+			productName = ModulesKlui;
+			productReference = 4D97ADAF2C038E92002409C3 /* libModulesKlui.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4D97ADBA2C038F57002409C3 /* TestDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D97ADBF2C038F57002409C3 /* Build configuration list for PBXNativeTarget "TestDriver" */;
+			buildPhases = (
+				4D97ADB72C038F57002409C3 /* Sources */,
+				4D97ADB82C038F57002409C3 /* Frameworks */,
+				4D97ADB92C038F57002409C3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestDriver;
+			productName = TestDriver;
+			productReference = 4D97ADBB2C038F57002409C3 /* TestDriver */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -88,7 +142,10 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					4D97AD9B2C037789002409C3 = {
+					4D97ADAE2C038E92002409C3 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					4D97ADBA2C038F57002409C3 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -106,18 +163,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D97AD9B2C037789002409C3 /* lab12 */,
+				4D97ADAE2C038E92002409C3 /* ModulesKlui */,
+				4D97ADBA2C038F57002409C3 /* TestDriver */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4D97AD982C037789002409C3 /* Sources */ = {
+		4D97ADAC2C038E92002409C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D97ADA82C0377DC002409C3 /* ClassLab12_Klui.cpp in Sources */,
-				4D97ADA02C037789002409C3 /* main.cpp in Sources */,
+				4D97ADB52C038EDA002409C3 /* ClassLab12_Klui.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D97ADB72C038F57002409C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D97ADBE2C038F57002409C3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +304,27 @@
 			};
 			name = Release;
 		};
-		4D97ADA42C037789002409C3 /* Debug */ = {
+		4D97ADB12C038E92002409C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4D97ADB22C038E92002409C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4D97ADC02C038F57002409C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -247,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		4D97ADA52C037789002409C3 /* Release */ = {
+		4D97ADC12C038F57002409C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -267,11 +352,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4D97ADA32C037789002409C3 /* Build configuration list for PBXNativeTarget "lab12" */ = {
+		4D97ADB02C038E92002409C3 /* Build configuration list for PBXNativeTarget "ModulesKlui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4D97ADA42C037789002409C3 /* Debug */,
-				4D97ADA52C037789002409C3 /* Release */,
+				4D97ADB12C038E92002409C3 /* Debug */,
+				4D97ADB22C038E92002409C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D97ADBF2C038F57002409C3 /* Build configuration list for PBXNativeTarget "TestDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D97ADC02C038F57002409C3 /* Debug */,
+				4D97ADC12C038F57002409C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
